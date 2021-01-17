@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact page for Course assignment">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="css/style.css" rel="stylesheet" />
+    <title>Contact</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Movies</a>
+            <a class="active" href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <div class="form-container">
+        <form id="contact-form" action="/action_page.php">
+            <h4>Questions or something to add? Or maybe you want to join the force?</h4>
+
+            <div id="validMessage"></div>
+            <div class="row">
+                <div class="field">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Name goes here..">
+                    <div class="formValidation-error" id="nameError">Name is required</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="field">
+                    <label for="email">Email *</label>
+                    <input type="text" id="email" name="mail" placeholder="Email goes here..">
+                    <div class="formValidation-error" id="emailError">Invalid email address</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="field">
+                    <label for="address">Address</label>
+                    <input type="text" id="address" name="adress" placeholder="Address goes here..">
+                    <div class="formValidation-error" id="addressError">Address must be at least 25 characters long</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="field">
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="Write something.."
+                        style="height:200px"></textarea>
+                    <div class="formValidation-error" id="subjectError">Subject must be least 10 characters long</div>
+                </div>
+            </div>
+            <input type="submit" value="Submit">
+        </form>
+        <div class="image">
+            <img src="images/star-wars.jpg" alt="image of spaceship">
+        </div>
+    </div>
+    <script src="js/contactForm.js"></script>
+</body>
+
+</html>
